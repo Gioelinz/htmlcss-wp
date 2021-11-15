@@ -37,9 +37,6 @@ body{
 }
 /* Layout */
 
-header{
-}
-
 .main-section{
     margin: 15px 0;
 }
@@ -48,27 +45,23 @@ main{
     min-height: 500px;
 }
 
-.header-main{
-}
 
 .sidebar-main{
     width: 20%;
-    height: 400px;
     float: left;
     margin-top: 20px;
 }
 
 .box-main{
     width: calc(60% - 30px);
-    height: 400px;
     float: left;
     margin: 20px 15px;
 }
 
 footer{
-    height: 50px;
-    background-color: #8801FE;
+    min-height: 80px;
     margin: 8px 0 15px 0;
+    line-height: 80px;
 }
 
 /* Header section */
@@ -153,4 +146,19 @@ a{
 
 .margin-content{
     margin-top: 10px;
+}
+
+/* Footer */
+
+footer p{
+    text-align: center;
+    line-height: 80px;
+}
+
+footer p::after{
+    content: '\2665';
+    font-size: 2em;
+    color: red;
+    line-height: 80px;
+    margin-left: 5px;
 }
